@@ -10,7 +10,9 @@ Welcome to course23package's documentation!
    :maxdepth: 2
    :caption: Contents:
 
- 
+   modules
+   readme_link
+   license_link
   
 Indices and tables
 ==================
