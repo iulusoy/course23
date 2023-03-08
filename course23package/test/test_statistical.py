@@ -9,13 +9,13 @@ class build_df:
         self.dfnamepath = name
 
     def read_df(self):
-        self.data = pd.read_csv(self.dfnamepath, r"\s+")
+        self.data = pd.read_csv(self.dfnamepath, sep=r"\s+")
         return self.data
 
 
 @pytest.fixture(scope="module")
 def get_df():
-    obj = build_df("./test/test_df.csv")
+    obj = build_df("./test/data/test_df.csv")
     data = obj.read_df()
     return data
 
