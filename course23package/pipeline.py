@@ -140,4 +140,5 @@ if __name__ == "__main__":
     # run_all('efield.t', 'data/', 'output/')
     # run_all("nstate_i.t", "data/", "output/")
     # run_all('table.dat', 'data/', 'output/')
+    # run_all('../data/npop.t', 'data/', 'output/')
     run_all('npop.t', 'data/', 'output/')
