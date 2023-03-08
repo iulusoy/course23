@@ -2,7 +2,7 @@ import pytest
 import pandas as pd
 import numpy as np
 import statistical as sl
-
+from pathlib import Path
 
 class build_df:
     def __init__(self, name):
@@ -15,7 +15,9 @@ class build_df:
 
 @pytest.fixture(scope="module")
 def get_df():
-    obj = build_df("./test/data/test_df.csv")
+    path = Path("./test/data/")
+    filename = "test_df.csv"
+    obj = build_df(path.joinpath(filename))
     data = obj.read_df()
     return data
 
